@@ -10,14 +10,14 @@ Project akhir mata kuliah Interaksi Manusia dan Komputer
 
 # Todos
 ## Components
--[] AppBar
--[] Footer
+- [ ] Navbar
+- [ ] Footer
 ## Pages
--[] Home
--[] Menu
--[] Promo
--[] Tentang kami
--[] Lokasi
+- [ ] Home
+- [ ] Menu
+- [ ] Promo
+- [ ] Tentang kami
+- [ ] Lokasi
 
 
 Arigatot
