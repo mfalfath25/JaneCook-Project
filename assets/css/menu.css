@@ -1,0 +1,192 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* MENU */
+
+.makaroni-biasa {
+  margin-top: 200px;
+}
+
+.title-menu {
+  width: 100vh;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+.title-menu h1 {
+  font-size: 84px;
+  font-weight: bold;
+}
+
+.hero1-menu,
+hero2-menu {
+  width: 520px;
+  height: 520px;
+}
+
+.hero1-menu img {
+  margin-top: 200px;
+  margin-left: 130%;
+}
+
+.hero2-menu img {
+  margin-left: 200px;
+  margin-top: 300px;
+}
+
+.biasa-menu {
+  margin-left: 70%;
+  margin-top: -200px;
+}
+
+.special-menu {
+  margin-left: 200px;
+}
+
+/* MAKARONI BIASA */
+
+.title-biasa {
+  margin-bottom: 200px;
+}
+
+.title-biasa h1 {
+  font-size: 64px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.makaroni-biasa h4 {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 55px;
+}
+
+.kering-biasa,
+.basah-biasa,
+.lidi-biasa {
+  display: flex;
+  width: 690px;
+  height: 260px;
+  margin-left: 120px;
+  border: solid 2px #f0f42d;
+}
+
+.kering-gallery,
+.basah-gallery,
+.lidi-gallery {
+  background-color: #d2cbcb;
+  height: 350px;
+  margin: 50px 100px 50px 120px;
+}
+
+.box-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gallery {
+  width: 360px;
+  height: 220px;
+  background-color: #c4c4c4;
+}
+
+.makaroni-biasa img {
+  border-right: solid 2px #000000;
+  margin-left: 30px;
+  padding-right: 30px;
+  margin-top: 5%;
+}
+
+.makaroni-biasa h3 {
+  margin-top: 15%;
+}
+
+.makaroni-biasa h3,
+.makaroni-biasa p {
+  margin-left: 30px;
+}
+
+/*MAKARONI SPECIAL*/
+
+.makaroni-special {
+  margin-top: 200px;
+}
+
+.title-special h1 {
+  font-size: 64px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+.container-special {
+  margin-top: 200px;
+  display: grid;
+  row-gap: 150px;
+  grid-template-rows: 43vh 44vh 40vh 38vh;
+  margin-bottom: 200px;
+}
+
+.container-special p {
+  letter-spacing: 0.02em;
+  line-height: 2em;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10% 80px 0px 80px;
+}
+
+.container-special img,
+.container-special h2 {
+  padding: 5px 80px 20px 80px;
+}
+
+.container-special h2 {
+  line-height: 1.5em;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.hero-special1,
+.hero-special3 {
+  border-right: 2px solid #000000;
+}
+
+.hero-special2,
+.hero-special4 {
+  border-left: 2px solid #000000;
+}
+
+.special1,
+.special2,
+.special3,
+.special4 {
+  display: flex;
+}
+
+.special2,
+.special4 {
+  margin-right: 110px;
+  margin-left: auto;
+}
+
+.special1,
+.special3 {
+  margin-left: 110px;
+}
+
+.lingkaran {
+  background-color: #d4ef2f;
+  opacity: 77%;
+  width: 800px;
+  height: 800px;
+  border-radius: 1000px;
+  z-index: -3;
+  margin-left: -700px;
+  margin-top: 1000px;
+  position: absolute;
+}
