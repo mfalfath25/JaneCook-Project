@@ -1,0 +1,59 @@
+.janecook-footer {
+  margin-top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+  }
+
+  .janecook-footer .atas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .janecook-footer .kiri{
+    padding: 40px 0px;
+}
+.janecook-footer .kanan{
+    display: inline;
+    float: right;
+    padding: 20px 0px;
+}
+.janecook-footer .kanan a{
+  padding: 0px 4px;
+  font-family: 'Inter Bold';
+  font-size: 0.6em;
+}
+
+.bawah{
+  font-family: 'Inter';
+  font-size: 0.6em;
+}
+
+
+@media screen and (min-width: 801px) {
+  .janecook-footer .atas{
+  flex-direction: row;
+  justify-content: space-between;
+  }
+  .janecook-footer .kanan{
+    padding: 40px;
+    }
+    .janecook-footer .kiri{
+      padding: 40px;
+  }
+  .janecook-footer .kanan a{
+    padding: 0px 10px;
+    font-size: 1em;
+  }
+  
+.bawah{
+  font-family: 'Inter';
+  font-size: 0.8em;
+}
+
+  
+}

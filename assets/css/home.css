@@ -1,0 +1,16 @@
+.eat-title{
+    font-size: 2em;
+    font-family: 'Inter Black';
+    text-align: center;
+}
+
+@media screen and (min-width:801px){
+    .flex-column-reverse{
+        display: flex;
+        flex-direction: row !important;
+    }
+    .eat-title{
+        font-size: 4em;
+        font-family: 'Inter Black';
+    }
+}

@@ -5,7 +5,7 @@ class AppBar extends HTMLElement{
 
     render(){
         this.innerHTML=`
-        <nav class="janecook-nav">
+        <nav class="janecook-nav fixed-top">
             <div>
                 <svg width="135" height="30" viewBox="0 0 135 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="135" height="30" fill="url(#pattern0)"/>
@@ -21,15 +21,15 @@ class AppBar extends HTMLElement{
                 <ul>
                     <li><a class="link" href="./index.html">Home</a></li>
                     <li>
-                        <a class="" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu <span><svg style="margin-left:10px"width="11" height="14" viewBox="0 0 11 14" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <a class=""  href="menu.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Menu<span><svg style="margin-left:10px"width="11" height="14" viewBox="0 0 11 14" fill="" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5.08331 10.431L0.311491 5.11692C0.0813503 4.86063 0.0813503 4.44511 0.311491 4.18884L0.868047 3.56904C1.09779 3.31319 1.47015 3.3127 1.70044 3.56795L5.5 7.77946L9.29955 3.56795C9.52983 3.3127 9.90219 3.31319 10.1319 3.56904L10.6885 4.18884C10.9186 4.44514 10.9186 4.86065 10.6885 5.11692L5.9167 10.431C5.68656 10.6873 5.31345 10.6873 5.08331 10.431Z" fill="#292929"/>
                             </svg></span>
                             
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Menu Spesial</a>
+                            <a class="dropdown-item" href="">Menu Spesial</a>
                             <a class="dropdown-item" href="#">Menu Biasa</a>
                         </div>
                     </li>
