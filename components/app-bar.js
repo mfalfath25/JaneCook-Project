@@ -29,8 +29,9 @@ class AppBar extends HTMLElement{
                         </a>
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="">Menu Spesial</a>
-                            <a class="dropdown-item" href="#">Menu Biasa</a>
+                            <a class="dropdown-item" href="./menu.html">Menu</a>
+                            <a class="dropdown-item" href="./menu-spesial.html">Menu Spesial</a>
+                            <a class="dropdown-item" href="./menu-biasa.html">Menu Biasa</a>
                         </div>
                     </li>
                     <li><a href="./promo.html" class="link">Promo</a></li>
