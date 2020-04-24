@@ -1,3 +1,10 @@
+body{
+    background-image: url(/assets/gambar/Vector\ 2.png), url(/assets/gambar/Vector\ 3.png), url(/assets/gambar/Vector\ 4.png), url(/assets/gambar/Vector\ 5.png);
+    background-repeat: no-repeat;
+    background-position: top right, bottom right, bottom left, top left;
+}
+
+
 .judulAtas{
     text-align: center;
     margin-top: 30px;
@@ -42,7 +49,8 @@
 .Palugada{
     border: solid 2px black;
     border-radius: 15px;
-    margin-left: 93px;
+    margin-left: 500px;
+    margin-top: 50px;
     width: 500px;
     display: inline-block;
     background: linear-gradient(#FFA4A4,#FFE3E3,#FFFFFF);
@@ -51,7 +59,8 @@
 .pedas{
     border: solid 2px black;
     border-radius: 15px;
-    margin-left: 100px;
+    margin-left: 500px;
+    margin-top: 50px;
     width: 500px;
     display: inline-block;
     background: linear-gradient(#BAFFFF,#E0FBFF,#F3FFFF);
@@ -60,7 +69,8 @@
 .nagih{
     border: solid 2px black;
     border-radius: 15px;
-    margin-left: 100px;
+    margin-left: 500px;
+    margin-top: 50px;
     width: 500px;
     display: inline-block;
     background: linear-gradient(#FDFFAD,#FCFFEB,#FFFFF6);
