@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lokasi</title>
+    <link rel="icon" type="image/gif/png" href="./assets/img/jancok.png" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
@@ -71,13 +72,13 @@
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="./menu.html">Menu</a>
+              <a class="dropdown-item" href="./menu.html?action=edit#menu-biasa"
+                >Menu Biasa</a
+              >
               <a
                 class="dropdown-item"
                 href="./menu.html?action=edit#menu-special"
                 >Menu Spesial</a
-              >
-              <a class="dropdown-item" href="./menu.html?action=edit#menu-biasa"
-                >Menu Biasa</a
               >
             </div>
           </li>
@@ -93,7 +94,16 @@
 
     <div class="detail-lokasi">
       <div class="map">
-        <img src="assets/image/map.png" alt="" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d987.8607178539366!2d112.6101152!3d-7.9531014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28af744dd68a3c87!2sMakaroni%20JaneCook!5e0!3m2!1sen!2sid!4v1587828438703!5m2!1sen!2sid"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
       </div>
       <div class="informasi-lokasi">
         <div class="hero">

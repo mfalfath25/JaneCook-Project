@@ -2,6 +2,20 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ed2d25;
+  border-radius: 50px;
+}
+
 .title-lokasi h1 {
   font-size: 40px;
   font-weight: bold;
@@ -21,12 +35,12 @@ body {
 .map {
   width: 550px;
   height: 500px;
+  border: 2px solid #12a1c5;
 }
 
-.map img {
+.map iframe {
   max-width: 100%;
   max-height: 100%;
-  border: 2px solid #12a1c5;
 }
 
 .hero {

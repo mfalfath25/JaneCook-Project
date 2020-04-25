@@ -1,113 +1,115 @@
-* h1, h2, h3{
-    font-weight: bolder;
+* h1,
+h2,
+h3 {
+  font-weight: bolder;
 }
 
-* p{
-    line-height: 1.8rem;
+* p {
+  line-height: 1.8rem;
 }
 /* Header main */
-.header-main h1{
-    text-align: center;
-    line-height: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 38px;
-    letter-spacing: 0.02em;
-    color: #000000;
-    margin-top: 120px;
+.header-main h1 {
+  text-align: center;
+  line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 38px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 120px;
 }
-.kotak-mera{
-    margin: auto;
-    text-align: center;
-    width: 146px;
-    height: 5px;
-    background: #CA000C;
-    margin-bottom: 150px;
+.kotak-mera {
+  margin: auto;
+  text-align: center;
+  width: 146px;
+  height: 5px;
+  background: #ca000c;
+  margin-bottom: 150px;
 }
 
 /* Space kosong */
-.motto{
-    width: 1200px;
-    height: 200px;
-    margin: auto;
-    margin-bottom: 120px;
-    background: #C4C4C4;
-    border-radius: 5px; 
+.motto {
+  width: 1200px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 120px;
+  background: #c4c4c4;
+  border-radius: 5px;
 }
 
 /* Header info 1 */
-.header-info-1{
-    text-align: justify;
-    margin-left: 160px;
-    margin-right: 700px;
+.header-info-1 {
+  text-align: justify;
+  margin-left: 160px;
+  margin-right: 700px;
 }
-.gambar-cabe img{
-    float: left;
-    margin-top: 100px;
-    margin-left: 160px;
-    margin-right: 100px;
+.gambar-cabe img {
+  float: left;
+  margin-top: 100px;
+  margin-left: 160px;
+  margin-right: 100px;
 }
 
 /* Header info 2 */
-.header-info-2{
-    text-align: justify;
-    margin-top: 150px;
-    margin-left: 160px;
-    margin-right: 200px;
-    margin-bottom: 130px;
+.header-info-2 {
+  text-align: justify;
+  margin-top: 150px;
+  margin-left: 160px;
+  margin-right: 200px;
+  margin-bottom: 130px;
 }
 
 /* Pilar  */
-.header-info-3{
-    text-align: center;
-    line-height: 1.4em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 38px;
-    letter-spacing: 0.02em;
-    color: #000000;
-    margin-top: 250px;
-    margin-bottom: 50px;
+.header-info-3 {
+  text-align: center;
+  line-height: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 38px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 250px;
+  margin-bottom: 50px;
 }
-.parent{
-    text-align: justify;
-    display: flex;  
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+.parent {
+  text-align: justify;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
 }
-.parent h3{
-    display: flex;  
-    justify-content: space-evenly;
-    margin-bottom: 50px;
+.parent h3 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
 }
-.parent img{
-    margin-bottom: 50px;
+.parent img {
+  margin-bottom: 50px;
 }
-.child-1{
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
-    margin-bottom: 50px;
+.child-1 {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+  margin-bottom: 50px;
 }
-.child-2{
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
-    margin-bottom: 50px;
+.child-2 {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+  margin-bottom: 50px;
 }
-.child-3{
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
-    margin-bottom: 50px;
+.child-3 {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px;
+  margin-bottom: 50px;
 }
 
-.parent p{
-    margin: auto;
+.parent p {
+  margin: auto;
 }
