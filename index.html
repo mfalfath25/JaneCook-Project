@@ -6,52 +6,124 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <style>
+        body{
+            overflow-x: hidden;
+            color: rgb(27, 27, 27);
+        }
+    </style>
 </head>
 <body>
     <app-bar></app-bar>
-    <main class="container" style="margin-top: 140px;">
-        <div class="d-flex flex-column-reverse justify-content-around">
-            <div style="margin-top: 70px;">
+    <div style="position: absolute;right: 0vw;top: -10px;z-index: -10;">
+    <svg width="368" height="306" viewBox="0 0 368 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="305.5" cy="0.5" r="305.5" fill="#1C81F6" fill-opacity="0.6"/>
+        </svg>
+    </div>    
+    <div style="position: absolute;left: 0vw;top: -10px;z-index: -9;">
+        <img src="./assets/image/kirii.png" alt="" srcset="">
+        </div>    
+    <main class="container" style="margin-top: 180px;">
+        <div class="d-flex flex-column-reverse justify-content-around" style="align-items: center;">
+            <div style="margin-top: 40px;margin-right: 10px;">
                 <span class="eat-title text-center">EAT</br> AND</br> ENJOY</span>
             </div>
             <div>
-                <img src="./assets/img/foodism.jpg"width="400" height="400" style="border-radius: 50%;"/>                               
+                <img src="./assets/img/foodism.jpg"width="400" height="400" style="margin-left:20px;border-radius: 50%;border: 50px solid #dd4d3a;"/>                               
             </div>
         </div>
-        <div style="margin-top: 20vh;">
-            <div class="text-center"><h2>Menu</h2></div>
-            <div class="d-flex justify-content-around home-menu-box">
+        <div style="margin-top: 30vh;">
+            <div class="text-center menu-titlee"><h2>Our Menu</h2></div>
+            <div class="container-seasonal">
+                <div class="item">
+                    <div class="menu-titlee">
+                        Makaroni Spesial
+                    </div>
+                    <div class="item-content">
+                        <p>
+                        Makaroni Spesial merupakan masakan makaroni yang jarang 
+                        atau bahkan belum pernah anda rasakan. Masakan makaroni
+                        yang unik, menghidangkan pengalaman memakan makaroni 
+                        yang luar biasa!
+                    </p>
+                    </div>
+                    <div>
+                        <button class="btn buttonkuu" onclick="test()">Order</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="menu-titlee">
+                        Makaroni Biasa
+                    </div>
+                    <div class="item-content">
+                        Makaroni Spesial merupakan makaroni yang bisa mix dengan
+                        sesuai selera kamu! Ada berbagai varian jenis makaroni yang 
+                        bisa kamu pilih, dan kamu bisa menentukan level 
+                        kepedasaannya loh.
+
+                    </div>
+                    <div>
+                        <button class="btn buttonkuu" id="eaa">Order</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="d-flex justify-content-around home-menu-box">
                 <div>
                     Makaroni Spesial
                 </div>
                 <div>
                     Makaroni Biasa
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div>Promo</div>
-        <div class="d-flex justify-content-around">
-            <div>
-                foto
-            </div>
-            <div>
-                text
-            </div>
-        </div>
-        <div>About us</div>
-        <div>
-            <div>
-                tex
-            </div>
-            <div>
-                foto
+        <div style="margin-top: 20vh;" class="boxx">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <img src="./assets/image/proomo.png" width="600" />
+                </div>
+                <div style="padding: 40px;">
+                    <div class="title-box"><span class="title-home">Promo</span></div>
+                    <span class="boxx-content">Janecook menyediakan promo bagi anda. Jangan lewatkan 
+                    kesempatan promo dari kami dengan mengunjungi toko 
+                    kami atau bisa anda lihat  di website kami.</span>
+                    <div style="margin: 60px 0px 0px 0px;">
+                        <button class="btn btn-promo" onclick="window.location.href = './promo.html';">Lihat Promo</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <div style="background-color: #001529;margin-top: 20vh;padding: 80px;color: white;">
+        <div style="text-align: center;" class="title-home">About us</div>
+        <div style="display:flex;flex-direction:column-reverse;justify-content: space-evenly;margin-top: 50px;">
+            <div class="abouttext">
+                Makaroni Jancook meruakan makaroni yang memiliki cita rasa yang dijaga dan 
+                disesuaikan selera rasa nusantara, dibuat dengan menggunakan teknik khusus 
+                sehingga memiliki tekstur renyah dan mudah dikonsumsi segala usia.
+                Rempah 
+                rempah pilihan dispilih untuk menjadikan makaroni Jancook menjadi panganan
+                 yang tepat untuk dikonsumsi dalam berbagai acara.
+            </div>
+            <div style="display:flex;justify-content: center; padding: 0px 0px 40px 0px;">
+                <img src="./assets/image/kering.png" width="160" style="margin-right: 10px;" />
+                <img src="./assets//image/basah.png" style="margin-left: 20px" width="160" style="margin-left: 10px;">
+            </div>
+          </div>
+    </div>
     <app-footer></app-footer>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/index.js" type="module"></script>
+    <script>
+        function test(){
+            var a = document.createElement("input");
+            document.body.appendChild(a)
+            a.value="JCNAGIH"
+            a.select()
+            document.execCommand("copy")
+            document.body.removeChild(a)
+        }
+    </script>
 </body>
 </html>
