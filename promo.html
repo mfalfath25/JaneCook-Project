@@ -6,13 +6,87 @@
     <title>Document</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/promo.css">
+    <script src="./assets/js/promoCopyTeks.js"></script>
 </head>
 <body>
     <app-bar></app-bar>
+
+    <div class="judulAtas">
+        <h1>Promo Menarik</h1>
+    </div>
+
+    
+    <div class="description">
+        <span>
+            <img src="/assets/image/sale.png" alt="discount.png">
+        </span>
+        <span>
+            <p>Untuk meningkatkan rasa puas dari pelanggan. Jancook selalu menyediakan promo-promo yang menarik bagi anda. Jangan lewatkan kesempatan promo dari kami dengan mengunjungi toko kami atau bisa anda lihat  di website kami.</p>
+        </span>
+    </div>
+
+    <div class="kupon">
+        <div class="Palugada">
+            <div class="deskProduk">
+                <h3>PALUGADA</h3>
+                <p>Berlaku Hingga September 2020</p>
+            </div>
+            <div class="disc">
+                <h3>50%<span class="off">off</span></h3>
+                <p>untuk pembelian pertama</p>
+            </div>
+            <div class="gambarKupon">
+                <img src="/assets/image/ticket_coupon_travelreceipt_pass_cinema_show-512 1.png" alt="ticket.png">
+            </div>
+            <div class="copyTeks">
+                <input type="text" value="PALUGADA" id="Palugada" readonly />
+                <button type="button" onclick="copy_text()">use coupon</button>
+            </div>
+        </div>    
+        <div class="pedas">
+            <div class="deskProduk">
+                <h3>JCPEDAS</h3>
+                <p>Berlaku Hingga September 2020</p>
+            </div>
+            <div class="disc">
+                <h3>30%<span class="off">off</span></h3>
+                <p>untuk pembelian ke-2 s/d 10</p>
+            </div>
+            <div class="gambarKupon">
+                <img src="/assets/image/ticket_coupon_travelreceipt_pass_cinema_show-512 1.png" alt="ticket.png">
+            </div>
+            <div class="copyTeks">
+                <input type="text" value="JCPEDAS" id="jcpedas" readonly />
+                <button type="button" onclick="myFunction() ">use coupon</button>
+            </div>
+        </div>  
+        <div class="nagih">
+            <div class="deskProduk">
+                <h3>JCNAGIH</h3>
+                <p>Berlaku Hingga September 2020</p>
+            </div>
+            <div class="disc1">
+                <h3>BUY3</h3>
+                <p>GET 1 FREE</p>
+            </div>
+            <div class="gambarKupon">
+                <img src="/assets/image/ticket_coupon_travelreceipt_pass_cinema_show-512 1.png" alt="ticket.png">
+            </div>
+            <div class="copyTeks">
+                <input type="text" value="JCNAGIH" id="jcnagih" readonly />
+                <button type="button" onclick="ngopi() ">use coupon</button>
+            </div>
+        </div>  
+    </div>
+    
+
+
     <app-footer></app-footer>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/index.js" type="module"></script>
+    
 </body>
 </html>
