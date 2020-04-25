@@ -1,10 +1,10 @@
-class AppBar extends HTMLElement{
-    connectedCallback(){
-        this.render();
-    }
+class AppBar extends HTMLElement {
+  connectedCallback() {
+    this.render();
+  }
 
-    render(){
-        this.innerHTML=`
+  render() {
+    this.innerHTML = `
         <nav class="janecook-nav fixed-top">
             <div>
                 <svg width="135" height="30" viewBox="0 0 135 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -30,7 +30,7 @@ class AppBar extends HTMLElement{
 
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="">Menu Spesial</a>
-                            <a class="dropdown-item" href="#">Menu Biasa</a>
+                            <a class="dropdown-item" href="">Menu Biasa</a>
                         </div>
                     </li>
                     <li><a href="./promo.html" class="link">Promo</a></li>
@@ -39,8 +39,8 @@ class AppBar extends HTMLElement{
                 </ul>
             </div>
         </nav>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define("app-bar",AppBar);
+customElements.define("app-bar", AppBar);

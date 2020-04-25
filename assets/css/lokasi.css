@@ -1,0 +1,72 @@
+.title-lokasi h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.detail-lokasi {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 100px;
+}
+
+.title-lokasi {
+  margin-top: 200px;
+}
+
+.map {
+  width: 550px;
+  height: 500px;
+}
+
+.map img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid #12a1c5;
+}
+
+.hero {
+  margin-top: -20px;
+  margin-left: 100px;
+}
+
+.kotak1 {
+  width: 420px;
+  height: 450px;
+  background: #c4c4c4;
+  border-radius: 2px;
+  opacity: 80%;
+}
+
+.kotak2 {
+  width: 515px;
+  height: 335px;
+  background: #c4c4c4;
+  opacity: 80%;
+  border-radius: 2px;
+}
+
+.container-kotak {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.garis {
+  z-index: -3;
+  position: absolute;
+  top: 600px;
+  right: -300px;
+}
+
+.round-lokasi {
+  position: absolute;
+  width: 503px;
+  height: 503px;
+  left: -250px;
+  top: 1150px;
+  background: rgba(28, 129, 246, 0.73);
+  opacity: 0.75;
+  border-radius: 500px;
+}
