@@ -1,16 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tentang Kami</title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/tentang-kami.css">
-</head>
+    <link rel="icon" type="image/gif/png" href="./assets/img/jancok.png" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/tentang-kami.css" />
+  </head>
 
-<body>
-    <app-bar></app-bar>
+  <body>
+    <nav class="janecook-nav fixed-top">
+      <div>
+        <svg
+          width="135"
+          height="30"
+          viewBox="0 0 135 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <rect width="135" height="30" fill="url(#pattern0)" />
+          <defs>
+            <pattern
+              id="pattern0"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use
+                xlink:href="#image0"
+                transform="translate(-0.00673401) scale(0.003367 0.0151515)"
+              />
+            </pattern>
+            <image
+              id="image0"
+              width="301"
+              height="66"
+              xlink:href="data:image/png;base64,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"
+            />
+          </defs>
+        </svg>
+      </div>
+      <div>
+        <ul>
+          <li><a class="link" href="./index.html">Home</a></li>
+          <li>
+            <a
+              class=""
+              href="menu.html"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Menu<span
+                ><svg
+                  style="margin-left: 10px;"
+                  width="11"
+                  height="14"
+                  viewBox="0 0 11 14"
+                  fill=""
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.08331 10.431L0.311491 5.11692C0.0813503 4.86063 0.0813503 4.44511 0.311491 4.18884L0.868047 3.56904C1.09779 3.31319 1.47015 3.3127 1.70044 3.56795L5.5 7.77946L9.29955 3.56795C9.52983 3.3127 9.90219 3.31319 10.1319 3.56904L10.6885 4.18884C10.9186 4.44514 10.9186 4.86065 10.6885 5.11692L5.9167 10.431C5.68656 10.6873 5.31345 10.6873 5.08331 10.431Z"
+                    fill="#292929"
+                  /></svg
+              ></span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="./menu.html">Menu</a>
+              <a class="dropdown-item" href="./menu.html?action=edit#menu-biasa"
+                >Menu Biasa</a
+              >
+              <a
+                class="dropdown-item"
+                href="./menu.html?action=edit#menu-special"
+                >Menu Spesial</a
+              >
+            </div>
+          </li>
+          <li><a href="./promo.html" class="link">Promo</a></li>
+          <li><a href="./tentang-kami.html" class="link">Tentang Kami</a></li>
+          <li><a href="./lokasi.html" class="link">Lokasi</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/popper.min.js"></script>
@@ -18,42 +97,171 @@
     <script src="./assets/js/index.js" type="module"></script>
 
     <div class="header-main">
-        <h1>About Us</h1>
-        <div class="kotak-mera"></div>
+      <h1>About Us</h1>
+      <div class="kotak-mera"></div>
     </div>
-    
-    <div class="motto"></div>
-    
-    <div class="header-info-1">
-        <h2>Pedas Janecook</h2>
-        <p>Makaroni Janecook meruakan makaroni yang memiliki cita rasa yang dijaga
-            dan disesuaikan selera rasa nusantara, dibuat dengan menggunakan teknik khusus sehingga memiliki tekstur renyah dan mudah dikonsumsi segala usia. Rempah rempah pilihan dispilih untuk menjadikan makaroni Jancook menjadi panganan yang tepat untuk dikonsumsi dalam berbagai acara.</p>
-    </div>
-    <div class="gambar-cabe"><img src="assets/images/chili.png" alt="cabe cabean :)"></div>
-    <div class="header-info-2">
-        <h2>Perjalanan Kami</h2>
-        <p>Janecook berdiri sejak 10 Maret 2020 berkomitmen untuk menjaga kepuasan pelanggan terhadap produk kami.
 
-            Berawal dari pabrik rumahan yang bertempat di Lowokwaru,Malang, kini Janecook sudah memiliki kios di Kos Putra Al Firdaus dengan jangkauan pengiriman yang mencakup nusantara.
-            
-            Hingga kini, Janecook memiliki berbagai pengembangan rasa yang tentu saja banyak diminati semua kalangan dan akan terus berupaya untuk terus memberikan kepuasan pada pelanggan kami.</p>
+    <div class="motto"></div>
+
+    <div class="header-info-1">
+      <h2>Pedas Janecook</h2>
+      <p>
+        Makaroni Janecook meruakan makaroni yang memiliki cita rasa yang dijaga
+        dan disesuaikan selera rasa nusantara, dibuat dengan menggunakan teknik
+        khusus sehingga memiliki tekstur renyah dan mudah dikonsumsi segala
+        usia. Rempah rempah pilihan dispilih untuk menjadikan makaroni Jancook
+        menjadi panganan yang tepat untuk dikonsumsi dalam berbagai acara.
+      </p>
+    </div>
+    <div class="gambar-cabe">
+      <img src="assets/images/chili.png" alt="cabe cabean :)" />
+    </div>
+    <div class="header-info-2">
+      <h2>Perjalanan Kami</h2>
+      <p>
+        Janecook berdiri sejak 10 Maret 2020 berkomitmen untuk menjaga kepuasan
+        pelanggan terhadap produk kami. Berawal dari pabrik rumahan yang
+        bertempat di Lowokwaru,Malang, kini Janecook sudah memiliki kios di Kos
+        Putra Al Firdaus dengan jangkauan pengiriman yang mencakup nusantara.
+        Hingga kini, Janecook memiliki berbagai pengembangan rasa yang tentu
+        saja banyak diminati semua kalangan dan akan terus berupaya untuk terus
+        memberikan kepuasan pada pelanggan kami.
+      </p>
     </div>
 
     <div class="header-info-3">
-        <h2>Tiga Pilar Kami</h2>
+      <h2>Tiga Pilar Kami</h2>
     </div>
 
     <div class="parent">
-        <div class="child-1">
-            <h3>Rasa</h3><img src="assets/images/Rasa.svg" alt="Taste"><p>Dengan bahan pilihan serta rempah rempah yang sudah dipilah untuk menjadikan cita rasa berkualitas yang cocok dengan lidah nusantara.</p>
-        </div>
-        <div class="child-2">
-            <h3>Hiegenis</h3><img src="assets/images/Higienis.svg" alt="Higienis"><p>Diproses dengan higienis serta memiliki standar operasi dalam pembuatannya sehingga menciptakan produk yang aman untuk dikonsumsi segala usia.</p>
-        </div>
-        <div class="child-3">
-            <h3>Kemudahan</h3><img src="assets/images/Kemudahan.svg" alt="Kemudahan"><p>Dengan menggunakan media yang berbasis online sehingga memudahkan konsumen untuk memesan produk kami yang memiliki jangkauan luas dari Sabang hingga Merauke.</p>
-        </div>
+      <div class="child-1">
+        <h3>Rasa</h3>
+        <img src="assets/images/Rasa.svg" alt="Taste" />
+        <p>
+          Dengan bahan pilihan serta rempah rempah yang sudah dipilah untuk
+          menjadikan cita rasa berkualitas yang cocok dengan lidah nusantara.
+        </p>
+      </div>
+      <div class="child-2">
+        <h3>Hiegenis</h3>
+        <img src="assets/images/Higienis.svg" alt="Higienis" />
+        <p>
+          Diproses dengan higienis serta memiliki standar operasi dalam
+          pembuatannya sehingga menciptakan produk yang aman untuk dikonsumsi
+          segala usia.
+        </p>
+      </div>
+      <div class="child-3">
+        <h3>Kemudahan</h3>
+        <img src="assets/images/Kemudahan.svg" alt="Kemudahan" />
+        <p>
+          Dengan menggunakan media yang berbasis online sehingga memudahkan
+          konsumen untuk memesan produk kami yang memiliki jangkauan luas dari
+          Sabang hingga Merauke.
+        </p>
+      </div>
     </div>
-    <app-footer></app-footer>
-</body>
+    <footer class="janecook-footer">
+      <div class="atas">
+        <div class="kiri">
+          <svg
+            width="291"
+            height="83"
+            viewBox="0 0 301 93"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M12.1186 92V81.8182H18.5021V83.1406H13.6548V86.2429H18.169V87.5604H13.6548V90.6776H18.5618V92H12.1186ZM35.4142 92H33.7836L37.4476 81.8182H39.2225L42.8865 92H41.2559L38.3773 83.6676H38.2978L35.4142 92ZM35.6877 88.0128H40.9775V89.3054H35.6877V88.0128ZM56.638 83.1406V81.8182H64.5179V83.1406H61.3411V92H59.8098V83.1406H56.638ZM98.8244 92H97.1937L100.858 81.8182H102.633L106.297 92H104.666L101.787 83.6676H101.708L98.8244 92ZM99.0978 88.0128H104.388V89.3054H99.0978V88.0128ZM129.985 81.8182V92H128.573L123.398 84.5327H123.303V92H121.767V81.8182H123.189L128.369 89.2955H128.464V81.8182H129.985ZM149.522 92H146.226V81.8182H149.627C150.624 81.8182 151.481 82.022 152.197 82.4297C152.913 82.834 153.461 83.4157 153.843 84.1747C154.227 84.9304 154.419 85.8369 154.419 86.8942C154.419 87.9548 154.225 88.8662 153.838 89.6286C153.453 90.3909 152.896 90.9775 152.167 91.3885C151.438 91.7962 150.556 92 149.522 92ZM147.762 90.6577H149.438C150.213 90.6577 150.858 90.5118 151.372 90.2202C151.885 89.9252 152.27 89.4993 152.525 88.9425C152.78 88.3823 152.908 87.6996 152.908 86.8942C152.908 86.0954 152.78 85.4176 152.525 84.8608C152.273 84.304 151.897 83.8814 151.396 83.593C150.896 83.3047 150.275 83.1605 149.532 83.1605H147.762V90.6577ZM188.035 92V81.8182H194.418V83.1406H189.571V86.2429H194.085V87.5604H189.571V90.6776H194.478V92H188.035ZM218.688 81.8182V92H217.276L212.101 84.5327H212.006V92H210.47V81.8182H211.892L217.072 89.2955H217.167V81.8182H218.688ZM238.887 81.8182H240.418V89.0369C240.418 89.6899 240.289 90.2483 240.03 90.7124C239.775 91.1764 239.415 91.531 238.951 91.7763C238.487 92.0182 237.944 92.1392 237.32 92.1392C236.747 92.1392 236.232 92.0348 235.774 91.826C235.32 91.6172 234.961 91.3139 234.695 90.9162C234.434 90.5152 234.303 90.0279 234.303 89.4545H235.829C235.829 89.7363 235.894 89.9799 236.023 90.1854C236.155 90.3909 236.336 90.5516 236.565 90.6676C236.797 90.7803 237.062 90.8366 237.36 90.8366C237.685 90.8366 237.96 90.7687 238.186 90.6328C238.414 90.4936 238.588 90.2898 238.708 90.0213C238.827 89.7528 238.887 89.4247 238.887 89.0369V81.8182ZM265.498 86.9091C265.498 87.9962 265.299 88.9309 264.902 89.7131C264.504 90.492 263.959 91.0919 263.266 91.5128C262.577 91.9304 261.793 92.1392 260.914 92.1392C260.033 92.1392 259.246 91.9304 258.553 91.5128C257.864 91.0919 257.32 90.4903 256.922 89.7081C256.525 88.9259 256.326 87.9929 256.326 86.9091C256.326 85.822 256.525 84.889 256.922 84.1101C257.32 83.3279 257.864 82.728 258.553 82.3104C259.246 81.8894 260.033 81.679 260.914 81.679C261.793 81.679 262.577 81.8894 263.266 82.3104C263.959 82.728 264.504 83.3279 264.902 84.1101C265.299 84.889 265.498 85.822 265.498 86.9091ZM263.977 86.9091C263.977 86.0805 263.843 85.3828 263.574 84.8161C263.309 84.246 262.944 83.8151 262.48 83.5234C262.02 83.2285 261.498 83.081 260.914 83.081C260.328 83.081 259.804 83.2285 259.343 83.5234C258.883 83.8151 258.518 84.246 258.25 84.8161C257.984 85.3828 257.852 86.0805 257.852 86.9091C257.852 87.7377 257.984 88.437 258.25 89.0071C258.518 89.5739 258.883 90.0047 259.343 90.2997C259.804 90.5914 260.328 90.7372 260.914 90.7372C261.498 90.7372 262.02 90.5914 262.48 90.2997C262.944 90.0047 263.309 89.5739 263.574 89.0071C263.843 88.437 263.977 87.7377 263.977 86.9091ZM280.095 81.8182H281.84L284.5 86.4467H284.609L287.269 81.8182H289.014L285.32 88.0028V92H283.789V88.0028L280.095 81.8182Z"
+              fill="#E3E3E3"
+            />
+            <rect width="301" height="66" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0"
+                  transform="scale(0.00332226 0.0151515)"
+                />
+              </pattern>
+              <image
+                id="image0"
+                width="301"
+                height="66"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </div>
+        <div class="kanan">
+          <a><b>FIND US ON</b></a>
+          <a>
+            <svg
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M34.1406 0H5.85938C2.62878 0 0 2.63608 0 5.87565V34.2354C0 37.475 2.62878 40.1111 5.85938 40.1111H17.6562V25.9312H12.9688V18.8804H17.6562V14.1016C17.6562 10.2135 20.8102 7.05078 24.6875 7.05078H31.7969V14.1016H24.6875V18.8804H31.7969L30.625 25.9312H24.6875V40.1111H34.1406C37.3712 40.1111 40 37.475 40 34.2354V5.87565C40 2.63608 37.3712 0 34.1406 0Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a>
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 42 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M28.875 0H13.125C5.87738 0 0 5.87738 0 13.125V28.875C0 36.1226 5.87738 42 13.125 42H28.875C36.1226 42 42 36.1226 42 28.875V13.125C42 5.87738 36.1226 0 28.875 0ZM38.0625 28.875C38.0625 33.9412 33.9412 38.0625 28.875 38.0625H13.125C8.05875 38.0625 3.9375 33.9412 3.9375 28.875V13.125C3.9375 8.05875 8.05875 3.9375 13.125 3.9375H28.875C33.9412 3.9375 38.0625 8.05875 38.0625 13.125V28.875Z"
+                fill="white"
+              />
+              <path
+                d="M21 10.5C15.2014 10.5 10.5 15.2014 10.5 21C10.5 26.7986 15.2014 31.5 21 31.5C26.7986 31.5 31.5 26.7986 31.5 21C31.5 15.2014 26.7986 10.5 21 10.5ZM21 27.5625C17.3828 27.5625 14.4375 24.6173 14.4375 21C14.4375 17.3801 17.3828 14.4375 21 14.4375C24.6173 14.4375 27.5625 17.3801 27.5625 21C27.5625 24.6173 24.6173 27.5625 21 27.5625Z"
+                fill="white"
+              />
+              <path
+                d="M32.2875 11.1117C33.0602 11.1117 33.6866 10.4853 33.6866 9.7126C33.6866 8.93989 33.0602 8.31348 32.2875 8.31348C31.5148 8.31348 30.8884 8.93989 30.8884 9.7126C30.8884 10.4853 31.5148 11.1117 32.2875 11.1117Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a>
+            <svg
+              width="44"
+              height="44"
+              viewBox="0 0 44 44"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M44 8.35725C42.3638 9.075 40.6203 9.55075 38.8025 9.78175C40.6725 8.66525 42.0998 6.91075 42.7708 4.796C41.0273 5.8355 39.1022 6.56975 37.0508 6.9795C35.3952 5.21675 33.0357 4.125 30.4618 4.125C25.4677 4.125 21.4473 8.1785 21.4473 13.1478C21.4473 13.8628 21.5077 14.5502 21.6562 15.2047C14.157 14.839 7.52125 11.2448 3.0635 5.7695C2.28525 7.11975 1.82875 8.66525 1.82875 10.329C1.82875 13.453 3.4375 16.2222 5.8355 17.8255C4.38625 17.798 2.9645 17.3772 1.76 16.7145C1.76 16.742 1.76 16.7778 1.76 16.8135C1.76 21.197 4.88675 24.838 8.987 25.6768C8.25275 25.8775 7.4525 25.9737 6.622 25.9737C6.0445 25.9737 5.4615 25.9408 4.91425 25.8197C6.083 29.392 9.3995 32.0182 13.343 32.1035C10.274 34.5042 6.37725 35.9508 2.15875 35.9508C1.419 35.9508 0.7095 35.9177 0 35.827C3.99575 38.4038 8.73125 39.875 13.838 39.875C30.437 39.875 39.512 26.125 39.512 14.2065C39.512 13.8077 39.4982 13.4228 39.479 13.0405C41.2692 11.77 42.7735 10.1832 44 8.35725Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="44" height="44" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div style="padding: 40px;" class="bawah">
+        © Copyright <b>Kelompok 4</b>. All Rights Reserved
+      </div>
+    </footer>
+  </body>
 </html>

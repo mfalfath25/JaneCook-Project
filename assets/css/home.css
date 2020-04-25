@@ -4,13 +4,121 @@
     text-align: center;
 }
 
+.container-seasonal {
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  .item {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    max-width: 300px;
+    transition: transform 500ms;
+  }
+
+  .container-seasonal:focus-within .item,
+.container-seasonal:hover .item {
+  transform: translateX(-10%);
+}
+
+.item:focus ~ .item,
+.item:hover ~ .item {
+  transform: translateX(10%);
+}
+
+
+.container-seasonal .item:focus,
+.container-seasonal .item:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.item-content{
+    height: 240px;
+}
+
+.buttonkuu{
+    padding: 10px 40px;
+    background-color: #CA000C;
+    color: white;
+    font-family: 'Inter Bold';
+}
+
+.buttonkuu:active{
+    border-color: #000;
+}
+
+.title-home{
+    font-family: 'Inter Bold';
+    font-size: 2.2em;
+}
+
+.boxx{
+    background-color: #F5F5F5;
+    font-family: 'Inter';
+    padding: 2px;
+}
+
+.btn-promo{
+    border: 0.5px solid black;
+    padding: 10px 12px;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.btn-promo:hover{
+    background-color: #ca000c;
+    color: white;
+}
+
+.btn-promo:active{
+    color: white;
+    border-color: #ff1818;
+}
+
+.boxx .boxx-content{
+    opacity: 0.7;
+}
+
+.title-box{
+    padding: 20px 0px;
+}
+
+.menu-titlee{
+    font-family: 'Inter Bold';
+}
+
+.bayang{
+    position: absolute;
+  left: 34%;
+    font-family: 'Source Sans Pro Black';
+    text-transform: uppercase;
+    opacity: 0.05;
+    font-size: 4em;
+    letter-spacing: 20px;
+}
+
+.about-titlee{
+    font-family: 'Inter Bold';
+}
+
+.abouttext{
+    font-family: 'Inter';
+}
+
 @media screen and (min-width:801px){
     .flex-column-reverse{
         display: flex;
+        text-align: center;
         flex-direction: row !important;
+        justify-content: center !important;
     }
     .eat-title{
         font-size: 4em;
         font-family: 'Inter Black';
     }
 }
+
