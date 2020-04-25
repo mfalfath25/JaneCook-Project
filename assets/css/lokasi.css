@@ -52,7 +52,7 @@ body {
 
 .container-kotak {
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   display: flex;
   justify-content: space-evenly;
 }
