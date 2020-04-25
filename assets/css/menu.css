@@ -7,6 +7,10 @@
 body {
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 /* MENU */
 
 .makaroni-biasa {
@@ -186,7 +190,7 @@ hero2-menu {
 .special2,
 .special3,
 .special4 {
-  top: 30px;
+  top: 10px;
   border-spacing: 15px;
   display: flex;
   position: relative;
@@ -194,7 +198,7 @@ hero2-menu {
 
 .special2,
 .special4 {
-  top: 60px;
+  top: 20px;
   margin-right: 110px;
   margin-left: auto;
 }
@@ -205,11 +209,11 @@ hero2-menu {
 }
 
 .special4 {
-  top: 110px;
+  top: 30px;
 }
 
 .special3 {
-  top: 80px;
+  top: 20px;
 }
 
 .special4 p,
